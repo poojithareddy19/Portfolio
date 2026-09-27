@@ -3,9 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gorla Poojitha | Data Scientist & ML Engineer</title>
-    <meta name="description" content="Gorla Poojitha, B.Tech CSE (AI & ML) 2026 graduate. End-to-end ML, RAG and MLOps projects with real evaluation numbers, tests and CI.">
+    <title>Gorla Poojitha | Data Scientist & ML Engineer, Hyderabad</title>
+    <meta name="description" content="Gorla Poojitha is a Data Scientist and ML Engineer in Hyderabad, India (B.Tech CSE AI & ML, 2026). Projects in RAG, text-to-SQL, MLOps and machine learning with measured results, tests and CI.">
+    <meta name="author" content="Gorla Poojitha">
     <meta name="theme-color" content="#0a0a0a">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Gorla Poojitha | Data Scientist & ML Engineer">
+    <meta property="og:description" content="End-to-end ML, RAG and MLOps projects with measured results, tests and CI.">
+    <meta name="twitter:card" content="summary">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a0a0a'/%3E%3Ctext x='50%25' y='56%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial,sans-serif' font-weight='800' font-size='28' fill='%23ffffff'%3EGP%3C/text%3E%3C/svg%3E">
     <script>
         // Apply the saved or system theme before first paint to avoid a flash
         (function () {
@@ -15,395 +21,30 @@
                 theme = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
             }
             document.documentElement.setAttribute('data-theme', theme);
+            document.documentElement.classList.add('js');
+            // Safety net: if the script bundle fails to load, show all content anyway
+            setTimeout(function () {
+                if (!window.__portfolioReady) document.documentElement.classList.remove('js');
+            }, 3000);
         })();
     </script>
-    <meta property="og:title" content="Gorla Poojitha | Data Scientist & ML Engineer">
-    <meta property="og:description" content="End-to-end ML, RAG and MLOps projects with real evaluation numbers, tests and CI.">
-    <meta property="og:type" content="website">
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a0a0a'/%3E%3Ctext x='50%25' y='56%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial,sans-serif' font-weight='800' font-size='28' fill='%23ffffff'%3EGP%3C/text%3E%3C/svg%3E">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300..800&family=JetBrains+Mono:wght@500;600&display=swap">
-    <style>
-        /* Monochrome themes. Dark is the default; light applies via data-theme="light". */
-        :root, [data-theme="dark"] {
-            color-scheme: dark;
-            --bg: #0a0a0a;
-            --bg-alt: #111111;
-            --surface: #141414;
-            --surface-2: #1c1c1c;
-            --border: rgba(255, 255, 255, 0.1);
-            --border-strong: rgba(255, 255, 255, 0.2);
-            --text: #fafafa;
-            --text-soft: #d4d4d4;
-            --muted: #a3a3a3;
-            --faint: #8a8a8a;
-            --accent: #ffffff;
-            --accent-hover: #d4d4d4;
-            --on-accent: #0a0a0a;
-            --accent-soft: rgba(255, 255, 255, 0.08);
-            --header-bg: rgba(10, 10, 10, 0.72);
-            --header-bg-scrolled: rgba(10, 10, 10, 0.92);
-            --grid-line: rgba(255, 255, 255, 0.045);
-            --glow: rgba(255, 255, 255, 0.08);
-            --shadow: rgba(0, 0, 0, 0.7);
-            --hover-shadow: rgba(255, 255, 255, 0.07);
-            --gradient: linear-gradient(90deg, #ffffff 0%, #8a8a8a 100%);
-        }
-        [data-theme="light"] {
-            color-scheme: light;
-            --bg: #ffffff;
-            --bg-alt: #f5f5f5;
-            --surface: #ffffff;
-            --surface-2: #f5f5f5;
-            --border: rgba(0, 0, 0, 0.1);
-            --border-strong: rgba(0, 0, 0, 0.2);
-            --text: #0a0a0a;
-            --text-soft: #262626;
-            --muted: #525252;
-            --faint: #6b6b6b;
-            --accent: #0a0a0a;
-            --accent-hover: #333333;
-            --on-accent: #ffffff;
-            --accent-soft: rgba(0, 0, 0, 0.06);
-            --header-bg: rgba(255, 255, 255, 0.75);
-            --header-bg-scrolled: rgba(255, 255, 255, 0.94);
-            --grid-line: rgba(0, 0, 0, 0.05);
-            --glow: rgba(0, 0, 0, 0.05);
-            --shadow: rgba(0, 0, 0, 0.12);
-            --hover-shadow: rgba(0, 0, 0, 0.14);
-            --gradient: linear-gradient(90deg, #0a0a0a 0%, #737373 100%);
-        }
-        :root {
-            --radius: 16px;
-            --maxw: 1160px;
-            --mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
-        }
-
-        *, *::before, *::after { box-sizing: border-box; }
-        html { scroll-behavior: smooth; scroll-padding-top: 80px; }
-        body {
-            margin: 0;
-            font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
-            background: var(--bg);
-            color: var(--text);
-            line-height: 1.6;
-            -webkit-font-smoothing: antialiased;
-            transition: background-color 0.3s, color 0.3s;
-        }
-        img, svg { display: block; }
-        a { color: inherit; text-decoration: none; }
-        h1, h2, h3, h4, p { margin: 0; }
-        ul { margin: 0; padding: 0; list-style: none; }
-        :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
-
-        .container { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
-        .text-gradient {
-            background: var(--gradient);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            color: transparent;
-        }
-        .skip-link {
-            position: absolute; left: 16px; top: -48px; z-index: 100;
-            background: var(--accent); color: var(--on-accent); font-weight: 700;
-            padding: 8px 14px; border-radius: 8px; transition: top 0.2s;
-        }
-        .skip-link:focus { top: 12px; }
-
-        /* Buttons */
-        .btn {
-            display: inline-flex; align-items: center; gap: 8px;
-            padding: 12px 22px; border-radius: 12px;
-            font-weight: 600; font-size: 15px; line-height: 1;
-            border: 1px solid transparent;
-            transition: background 0.2s, border-color 0.2s, color 0.2s, transform 0.2s;
-        }
-        .btn:hover { transform: translateY(-1px); }
-        .btn-primary { background: var(--accent); color: var(--on-accent); box-shadow: 0 10px 30px -12px var(--shadow); }
-        .btn-primary:hover { background: var(--accent-hover); }
-        .btn-ghost { border-color: var(--border-strong); color: var(--text); }
-        .btn-ghost:hover { border-color: var(--accent); background: var(--accent-soft); }
-        .btn-sm { padding: 9px 16px; font-size: 14px; border-radius: 10px; }
-        .btn svg { width: 16px; height: 16px; }
-
-        /* Header */
-        .site-header {
-            position: fixed; inset: 0 0 auto 0; z-index: 50;
-            background: var(--header-bg);
-            backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
-            border-bottom: 1px solid transparent;
-            transition: border-color 0.3s, background 0.3s;
-        }
-        .site-header.scrolled { border-bottom-color: var(--border); background: var(--header-bg-scrolled); }
-        .nav { display: flex; align-items: center; justify-content: space-between; height: 68px; }
-        .nav-right { display: flex; align-items: center; gap: 28px; }
-        .nav-actions { display: flex; align-items: center; gap: 10px; }
-        .logo { font-size: 22px; font-weight: 800; letter-spacing: -0.02em; }
-        .nav-links { display: flex; align-items: center; gap: 30px; }
-        .nav-links a { color: var(--muted); font-size: 15px; font-weight: 500; transition: color 0.2s; }
-        .nav-links a:hover, .nav-links a.active { color: var(--text); }
-        .nav-links a.active { position: relative; }
-        .nav-links a.active::after {
-            content: ''; position: absolute; left: 0; right: 0; bottom: -6px; height: 2px;
-            background: var(--accent); border-radius: 2px;
-        }
-        .icon-btn {
-            display: inline-flex; align-items: center; justify-content: center;
-            width: 42px; height: 42px; border-radius: 10px; cursor: pointer;
-            background: none; border: 1px solid var(--border-strong); color: var(--text);
-            transition: border-color 0.2s, background 0.2s;
-        }
-        .icon-btn:hover { border-color: var(--accent); background: var(--accent-soft); }
-        .icon-btn svg { width: 20px; height: 20px; }
-        .menu-toggle { display: none; }
-        [data-theme="dark"] .icon-moon, [data-theme="light"] .icon-sun { display: none; }
-
-        /* Hero */
-        .hero { position: relative; overflow: hidden; padding: 168px 0 96px; }
-        .hero::before {
-            content: ''; position: absolute; inset: 0; z-index: -2;
-            background-image:
-                linear-gradient(var(--grid-line) 1px, transparent 1px),
-                linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
-            background-size: 56px 56px;
-            mask-image: radial-gradient(ellipse 70% 60% at 50% 30%, #000 30%, transparent 75%);
-            -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 30%, #000 30%, transparent 75%);
-        }
-        .hero::after {
-            content: ''; position: absolute; z-index: -1; width: 720px; height: 420px;
-            left: 50%; top: 40px; transform: translateX(-50%);
-            background: radial-gradient(closest-side, var(--glow), transparent);
-            filter: blur(20px);
-        }
-        .hero-inner { text-align: center; max-width: 880px; margin: 0 auto; }
-        .pill {
-            display: inline-flex; align-items: center; gap: 10px;
-            padding: 7px 14px; border-radius: 999px; font-size: 13.5px; font-weight: 500;
-            color: var(--muted); background: var(--accent-soft); border: 1px solid var(--border-strong);
-        }
-        .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 4px var(--accent-soft); }
-        .hero h1 { margin-top: 26px; font-size: clamp(42px, 7vw, 76px); font-weight: 800; letter-spacing: -0.035em; line-height: 1.05; }
-        .role-line { margin-top: 18px; font-size: clamp(20px, 3vw, 28px); font-weight: 300; color: var(--muted); min-height: 1.5em; }
-        .role-line .text-gradient { font-weight: 700; }
-        .caret { display: inline-block; width: 2px; height: 1em; margin-left: 3px; vertical-align: -0.12em; background: var(--accent); animation: blink 1s steps(1) infinite; }
-        @keyframes blink { 50% { opacity: 0; } }
-        .hero-lead { margin: 26px auto 0; max-width: 680px; font-size: 18px; color: var(--muted); }
-        .hero-cta { margin-top: 36px; display: flex; justify-content: center; flex-wrap: wrap; gap: 14px; }
-        .stats {
-            margin: 72px auto 0; max-width: 920px;
-            display: grid; grid-template-columns: repeat(4, 1fr);
-            border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface);
-        }
-        .stat { padding: 22px 16px; text-align: center; }
-        .stat + .stat { border-left: 1px solid var(--border); }
-        .stat-value { font-size: 30px; font-weight: 800; letter-spacing: -0.02em; }
-        .stat-label { margin-top: 4px; font-size: 13.5px; color: var(--muted); }
-
-        /* Sections */
-        section { padding: 104px 0; }
-        .section-alt { background: var(--bg-alt); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
-        .section-head { max-width: 720px; margin-bottom: 52px; }
-        .eyebrow {
-            font-family: var(--mono); font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
-            color: var(--faint);
-        }
-        .section-head h2 { margin-top: 10px; font-size: clamp(30px, 4vw, 42px); font-weight: 800; letter-spacing: -0.025em; line-height: 1.15; }
-        .section-head p { margin-top: 14px; color: var(--muted); font-size: 17px; }
-
-        /* About */
-        .about-grid { display: grid; grid-template-columns: 1.35fr 1fr; gap: 48px; align-items: start; }
-        .about-text p { color: var(--muted); font-size: 17px; }
-        .about-text p + p { margin-top: 18px; }
-        .about-text strong { color: var(--text); font-weight: 600; }
-        .principles { margin-top: 32px; display: grid; gap: 14px; }
-        .principle { display: flex; gap: 14px; align-items: flex-start; }
-        .principle-icon {
-            flex: none; width: 36px; height: 36px; border-radius: 10px;
-            display: grid; place-items: center; background: var(--accent-soft); color: var(--text);
-            border: 1px solid var(--border);
-        }
-        .principle-icon svg { width: 18px; height: 18px; }
-        .principle h4 { font-size: 15.5px; font-weight: 600; }
-        .principle p { margin-top: 2px; font-size: 14.5px; color: var(--muted); }
-        .card {
-            background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
-            transition: background-color 0.3s, border-color 0.3s, transform 0.3s, box-shadow 0.3s;
-        }
-        .facts { padding: 28px; }
-        .facts h3 { font-size: 17px; font-weight: 700; }
-        .fact-list { margin: 18px 0 0; display: grid; gap: 16px; }
-        .fact { display: grid; grid-template-columns: 112px 1fr; gap: 12px; font-size: 14.5px; }
-        .fact dt { color: var(--faint); }
-        .fact dd { margin: 0; color: var(--text); }
-        .facts .tags { margin-top: 22px; padding-top: 22px; border-top: 1px solid var(--border); }
-
-        /* Chips / tags */
-        .tags { display: flex; flex-wrap: wrap; gap: 8px; }
-        .chip {
-            font-size: 12.5px; font-weight: 500; padding: 5px 11px; border-radius: 999px;
-            color: var(--text-soft); background: var(--accent-soft); border: 1px solid var(--border);
-        }
-        .chip-accent { color: var(--text); border-color: var(--border-strong); font-weight: 600; }
-
-        /* Projects */
-        .filters { display: flex; flex-wrap: wrap; gap: 10px; margin: -20px 0 36px; }
-        .filter {
-            font: inherit; font-size: 14px; font-weight: 500; cursor: pointer;
-            padding: 8px 16px; border-radius: 999px; color: var(--muted);
-            background: transparent; border: 1px solid var(--border-strong); transition: all 0.2s;
-        }
-        .filter:hover { color: var(--text); }
-        .filter[aria-pressed="true"] { color: var(--on-accent); background: var(--accent); border-color: var(--accent); }
-        .projects-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
-        .project { display: flex; flex-direction: column; padding: 28px; }
-        .project:hover { border-color: var(--border-strong); transform: translateY(-3px); box-shadow: 0 20px 50px -24px var(--hover-shadow); }
-        .project[hidden] { display: none; }
-        .project-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
-        .category { font-family: var(--mono); font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--faint); }
-        .status {
-            display: inline-flex; align-items: center; gap: 7px; font-size: 12.5px; font-weight: 600;
-            padding: 4px 10px; border-radius: 999px; border: 1px solid var(--border-strong);
-        }
-        .status::before { content: ''; width: 7px; height: 7px; border-radius: 50%; background: currentColor; }
-        .status-live { color: var(--on-accent); background: var(--accent); border-color: var(--accent); }
-        .status-live::before { animation: pulse 2s infinite; }
-        .status-local { color: var(--muted); }
-        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
-        .project h3 { margin-top: 16px; font-size: 23px; font-weight: 700; letter-spacing: -0.015em; line-height: 1.25; }
-        .project-sub { margin-top: 4px; font-size: 14px; color: var(--faint); }
-        .project-desc { margin-top: 14px; color: var(--muted); font-size: 15.5px; }
-        .metrics { margin-top: 22px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
-        .metric { padding: 14px 12px; border-radius: 12px; background: var(--surface-2); border: 1px solid var(--border); }
-        .metric-value { font-family: var(--mono); font-size: 21px; font-weight: 600; letter-spacing: -0.02em; color: var(--text); }
-        .metric-label { margin-top: 4px; font-size: 12.5px; line-height: 1.4; color: var(--muted); }
-        .highlights { margin-top: 22px; display: grid; gap: 10px; }
-        .highlights li { position: relative; padding-left: 22px; font-size: 14.5px; color: var(--text-soft); }
-        .highlights li::before {
-            content: ''; position: absolute; left: 2px; top: 0.62em; width: 7px; height: 7px; border-radius: 1px;
-            background: var(--text); transform: rotate(45deg);
-        }
-        .highlights code, .notes code, .metric-label code { font-family: var(--mono); font-size: 0.88em; color: var(--text); background: var(--accent-soft); border: 1px solid var(--border); padding: 0 5px; border-radius: 5px; }
-        details.notes { margin-top: 18px; border-top: 1px dashed var(--border-strong); padding-top: 14px; }
-        details.notes summary {
-            cursor: pointer; list-style: none; font-size: 14px; font-weight: 600; color: var(--muted);
-            display: inline-flex; align-items: center; gap: 8px;
-        }
-        details.notes summary::-webkit-details-marker { display: none; }
-        details.notes summary::before { content: '+'; font-family: var(--mono); color: var(--text); width: 12px; }
-        details.notes[open] summary::before { content: '-'; }
-        details.notes summary:hover { color: var(--text); }
-        .notes-body { margin-top: 12px; font-size: 14px; color: var(--muted); display: grid; gap: 8px; }
-        .notes-body strong { color: var(--text-soft); font-weight: 600; }
-        .project .tags { margin-top: 22px; }
-        .project-links { margin-top: auto; padding-top: 24px; display: flex; flex-wrap: wrap; gap: 10px; }
-
-        .project.featured { grid-column: 1 / -1; display: grid; grid-template-columns: 1.2fr 1fr; gap: 36px; padding: 36px; }
-        .project.featured .featured-side { display: flex; flex-direction: column; }
-        .project.featured .metrics { margin-top: 0; grid-template-columns: repeat(2, 1fr); }
-        .project.featured .metric-value { font-size: 24px; }
-        .featured-badge {
-            font-family: var(--mono); font-size: 11.5px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase;
-            padding: 4px 10px; border-radius: 999px; color: var(--on-accent); background: var(--accent);
-        }
-
-        /* Timeline */
-        .timeline { position: relative; display: grid; gap: 22px; padding-left: 28px; }
-        .timeline::before { content: ''; position: absolute; left: 7px; top: 8px; bottom: 8px; width: 2px; background: var(--border-strong); }
-        .tl-item { position: relative; padding: 26px 28px; }
-        .tl-item::before {
-            content: ''; position: absolute; left: -28px; top: 32px; width: 16px; height: 16px; border-radius: 50%;
-            background: var(--bg-alt); border: 3px solid var(--accent);
-        }
-        .tl-head { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; align-items: baseline; }
-        .tl-item h3 { font-size: 19px; font-weight: 700; }
-        .tl-org { margin-top: 2px; color: var(--text-soft); font-weight: 500; font-size: 15px; }
-        .tl-date { font-family: var(--mono); font-size: 13px; color: var(--faint); }
-        .tl-item .highlights { margin-top: 16px; }
-        .tl-item .tags { margin-top: 18px; }
-
-        /* Skills */
-        .skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-        .skill-group { padding: 24px; }
-        .skill-group-head { display: flex; align-items: center; gap: 12px; }
-        .skill-icon {
-            width: 38px; height: 38px; border-radius: 10px; display: grid; place-items: center;
-            background: var(--accent-soft); color: var(--text); border: 1px solid var(--border);
-        }
-        .skill-icon svg { width: 19px; height: 19px; }
-        .skill-group h3 { font-size: 16.5px; font-weight: 700; }
-        .skill-group .tags { margin-top: 18px; }
-
-        /* Certifications */
-        .certs-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; }
-        .cert { padding: 22px; display: flex; flex-direction: column; gap: 6px; }
-        .cert-issuer { font-family: var(--mono); font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--faint); }
-        .cert h3 { font-size: 16px; font-weight: 600; line-height: 1.4; }
-        .cert-date { margin-top: auto; padding-top: 6px; font-size: 13px; color: var(--faint); }
-
-        /* Contact */
-        .contact-card {
-            position: relative; overflow: hidden; text-align: center; padding: 64px 32px;
-            border-radius: 24px; border: 1px solid var(--border-strong);
-            background: radial-gradient(ellipse 60% 80% at 50% 0%, var(--glow), transparent 70%), var(--surface);
-        }
-        .contact-card h2 { margin-top: 10px; font-size: clamp(30px, 4vw, 44px); font-weight: 800; letter-spacing: -0.025em; }
-        .contact-card p { margin: 16px auto 0; max-width: 560px; color: var(--muted); font-size: 17px; }
-        .contact-card .hero-cta { margin-top: 32px; }
-        .socials { margin-top: 32px; display: flex; justify-content: center; gap: 14px; }
-        .social {
-            width: 46px; height: 46px; border-radius: 12px; display: grid; place-items: center;
-            color: var(--muted); border: 1px solid var(--border-strong); transition: all 0.2s;
-        }
-        .social:hover { color: var(--text); border-color: var(--accent); transform: translateY(-2px); }
-        .social svg { width: 20px; height: 20px; }
-
-        footer { padding: 36px 0; border-top: 1px solid var(--border); }
-        .footer-inner { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; font-size: 14px; color: var(--faint); }
-        .footer-inner a:hover { color: var(--text); }
-
-        /* Reveal on scroll (only when JS is running) */
-        .js .reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
-        .js .reveal.visible { opacity: 1; transform: none; }
-
-        /* Responsive */
-        @media (max-width: 960px) {
-            .about-grid, .project.featured { grid-template-columns: 1fr; }
-            .skills-grid { grid-template-columns: repeat(2, 1fr); }
-        }
-        @media (max-width: 820px) {
-            .menu-toggle { display: inline-flex; }
-            .nav-links {
-                position: absolute; top: 68px; left: 0; right: 0;
-                flex-direction: column; align-items: stretch; gap: 0;
-                padding: 8px 24px 20px; background: var(--bg); border-bottom: 1px solid var(--border);
-                box-shadow: 0 24px 40px -12px var(--shadow);
-                display: none;
-            }
-            .nav-links.open { display: flex; }
-            .nav-links a { padding: 12px 0; border-bottom: 1px solid var(--border); }
-            .nav-links a:last-child { border-bottom: none; }
-            .nav-links a.active::after { display: none; }
-            .projects-grid { grid-template-columns: 1fr; }
-            .stats { grid-template-columns: repeat(2, 1fr); }
-            .stat:nth-child(3) { border-left: none; }
-            .stat:nth-child(n+3) { border-top: 1px solid var(--border); }
-        }
-        @media (max-width: 560px) {
-            section { padding: 80px 0; }
-            .hero { padding: 132px 0 72px; }
-            .skills-grid { grid-template-columns: 1fr; }
-            .metrics, .project.featured .metrics { grid-template-columns: repeat(2, 1fr); }
-            .project, .project.featured { padding: 22px; }
-            .fact { grid-template-columns: 96px 1fr; }
-        }
-        @media (prefers-reduced-motion: reduce) {
-            html { scroll-behavior: auto; }
-            *, *::before, *::after { animation: none !important; transition: none !important; }
-            .js .reveal { opacity: 1; transform: none; }
-        }
-    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&family=JetBrains+Mono:wght@500;600;700&display=swap">
+    <link rel="stylesheet" href="/src/styles.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Gorla Poojitha",
+        "jobTitle": "Data Scientist and ML Engineer",
+        "email": "mailto:poojithareddy1905@gmail.com",
+        "address": { "@type": "PostalAddress", "addressLocality": "Hyderabad", "addressCountry": "IN" },
+        "alumniOf": { "@type": "CollegeOrUniversity", "name": "TKR College of Engineering and Technology" },
+        "knowsAbout": ["Machine Learning", "Retrieval-Augmented Generation", "Text-to-SQL", "MLOps", "NLP", "Data Analytics"],
+        "sameAs": ["https://github.com/poojithareddy19", "https://www.linkedin.com/in/gorlapoojitha"]
+    }
+    </script>
 </head>
 <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -411,14 +52,13 @@
     <!-- Header -->
     <header class="site-header" id="navbar">
         <div class="container nav">
-            <a href="#top" class="logo" aria-label="Gorla Poojitha, home">GP<span class="text-gradient">.AI</span></a>
+            <a href="#top" class="logo" aria-label="Gorla Poojitha, back to top"><span class="logo-mark" aria-hidden="true">GP</span>Gorla Poojitha</a>
             <div class="nav-right">
                 <nav class="nav-links" id="nav-links" aria-label="Primary">
-                    <a href="#about">About</a>
                     <a href="#projects">Projects</a>
-                    <a href="#experience">Experience</a>
                     <a href="#skills">Skills</a>
-                    <a href="#certifications">Certifications</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#achievements">Achievements</a>
                     <a href="#contact">Contact</a>
                 </nav>
                 <div class="nav-actions">
@@ -436,284 +76,319 @@
 
     <main id="main">
 
-        <!-- Hero -->
-        <section class="hero" id="top">
-            <div class="container hero-inner">
-                <span class="pill"><span class="dot" aria-hidden="true"></span>B.Tech CSE (AI &amp; ML) graduate, 2026 · Open to entry-level roles</span>
-                <h1>Hi, I'm Gorla Poojitha.</h1>
-                <p class="role-line" aria-live="off">
-                    <span>I work as a </span><span class="text-gradient" id="role">Data Scientist</span><span class="caret" aria-hidden="true"></span>
-                </p>
-                <p class="hero-lead">
-                    I build machine learning and LLM systems end to end, from raw data to a tested, deployable app, and I measure them honestly: fixed evaluation sets, fair baselines and limits stated up front.
-                </p>
-                <div class="hero-cta">
-                    <a href="#projects" class="btn btn-primary">See my projects
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-                    </a>
-                    <a href="mailto:poojithareddy1905@gmail.com" class="btn btn-ghost">Get in touch</a>
-                </div>
-
-                <div class="stats reveal">
-                    <div class="stat"><div class="stat-value text-gradient">5</div><div class="stat-label">End-to-end projects</div></div>
-                    <div class="stat"><div class="stat-value text-gradient">550+</div><div class="stat-label">Automated tests</div></div>
-                    <div class="stat"><div class="stat-value text-gradient">4</div><div class="stat-label">CI pipelines on GitHub Actions</div></div>
-                    <div class="stat"><div class="stat-value text-gradient">1</div><div class="stat-label">Live deployment</div></div>
-                </div>
-            </div>
-        </section>
-
-        <!-- About -->
-        <section id="about" class="section-alt">
+        <!-- ============================== Hero ============================== -->
+        <section class="hero" id="top" aria-labelledby="hero-title">
             <div class="container">
-                <div class="section-head reveal">
-                    <span class="eyebrow">About</span>
-                    <h2>Data scientist who ships working, tested systems</h2>
-                </div>
-                <div class="about-grid">
-                    <div class="about-text reveal">
-                        <p>I'm a <strong>2026 B.Tech graduate in Computer Science (AI &amp; ML)</strong> from TKR College of Engineering and Technology, Hyderabad. My foundation is Python, SQL and machine learning, and my recent work goes further: retrieval-augmented generation, text-to-SQL over real scientific data, and MLOps pipelines with CI/CD, tracking and monitoring.</p>
-                        <p>During my internship at <strong>ThinkMates EduTech</strong> I turned raw business data into KPIs and Power BI dashboards for sales teams, managers and leadership. Since then I have rebuilt and extended my projects to production standards: reproducible pipelines, leakage-free evaluation, local LLMs and automated tests on every push.</p>
-
-                        <div class="principles">
-                            <div class="principle">
-                                <div class="principle-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg></div>
-                                <div><h4>Measure before claiming</h4><p>Every number on this page comes from a fixed evaluation set or a held-out test split, next to a baseline.</p></div>
-                            </div>
-                            <div class="principle">
-                                <div class="principle-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/><path d="M9 12l2 2 4-4"/></svg></div>
-                                <div><h4>No leakage, no shortcuts</h4><p>Chronological splits, per-fold preprocessing and test sets that are touched exactly once.</p></div>
-                            </div>
-                            <div class="principle">
-                                <div class="principle-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .9-1 1.6V14M12 17h.01"/></svg></div>
-                                <div><h4>Refuse rather than guess</h4><p>My LLM apps cite their sources and decline questions the data cannot answer.</p></div>
-                            </div>
+                <div class="hero-grid">
+                    <div>
+                        <span class="status-pill hero-fade"><span class="pulse-dot" aria-hidden="true"></span>Open to entry-level roles</span>
+                        <h1 class="headline" id="hero-title">
+                            <span class="line"><span class="line-inner">Gorla Poojitha</span></span>
+                            <span class="line line-muted"><span class="line-inner">Data Scientist &amp; ML Engineer</span></span>
+                        </h1>
+                        <p class="value-prop hero-fade d1">I build <strong>machine learning and LLM systems end to end</strong>, from raw data to a tested, deployed app, and I report the results honestly.</p>
+                        <div class="hero-meta hero-fade d2">
+                            <span>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+                                Hyderabad, India
+                            </span>
+                            <span>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                                IST (UTC+5:30) · <span id="local-time" class="mono">local time</span>
+                            </span>
+                            <span>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/></svg>
+                                B.Tech CSE (AI &amp; ML), 2026
+                            </span>
+                        </div>
+                        <div class="hero-cta hero-fade d3">
+                            <a href="#projects" class="btn btn-primary">View Projects
+                                <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                            </a>
+                            <a href="#contact" class="btn btn-ghost">Get in Touch</a>
                         </div>
                     </div>
 
-                    <aside class="card facts reveal" aria-label="At a glance">
-                        <h3>At a glance</h3>
-                        <dl class="fact-list">
-                            <div class="fact"><dt>Degree</dt><dd>B.Tech CSE (AI &amp; ML), JNTUH</dd></div>
-                            <div class="fact"><dt>College</dt><dd>TKR College of Engineering and Technology</dd></div>
-                            <div class="fact"><dt>Graduated</dt><dd>2026 · CGPA 8.12 / 10</dd></div>
-                            <div class="fact"><dt>Location</dt><dd>Hyderabad, India</dd></div>
-                            <div class="fact"><dt>Looking for</dt><dd>Entry-level Data Scientist, ML Engineer or AI Engineer roles</dd></div>
+                    <aside class="card profile-card hero-fade d4" data-spotlight aria-label="Profile summary">
+                        <svg class="avatar" viewBox="0 0 300 300" role="img" aria-label="Abstract avatar with the initials GP">
+                            <g class="ring ring-a" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.5" stroke-dasharray="3 9">
+                                <circle cx="150" cy="150" r="140"/>
+                            </g>
+                            <g class="ring ring-b" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                                <path d="M150 38 A112 112 0 0 1 262 150" stroke-opacity="0.9"/>
+                                <path d="M150 262 A112 112 0 0 1 38 150" stroke-opacity="0.45"/>
+                                <circle cx="262" cy="150" r="5" fill="currentColor" stroke="none"/>
+                                <circle cx="38" cy="150" r="3.5" fill="currentColor" stroke="none" fill-opacity="0.6"/>
+                            </g>
+                            <circle cx="150" cy="150" r="88" style="fill: var(--surface-2)" stroke="currentColor" stroke-opacity="0.18"/>
+                            <g stroke="currentColor" stroke-opacity="0.12">
+                                <path d="M92 150h116M150 92v116"/>
+                            </g>
+                            <text x="150" y="152" text-anchor="middle" dominant-baseline="middle" font-family="Inter, sans-serif" font-size="64" font-weight="800" letter-spacing="-3" fill="currentColor">GP</text>
+                        </svg>
+                        <dl class="profile-facts">
+                            <div class="profile-fact"><dt>Role</dt><dd>Data Scientist / ML Engineer</dd></div>
+                            <div class="profile-fact"><dt>Focus</dt><dd>ML, RAG, MLOps</dd></div>
+                            <div class="profile-fact"><dt>Education</dt><dd>B.Tech, CGPA 8.12</dd></div>
+                            <div class="profile-fact"><dt>Status</dt><dd>Open to work</dd></div>
                         </dl>
-                        <div class="tags">
-                            <span class="chip chip-accent">Machine Learning</span>
-                            <span class="chip chip-accent">RAG &amp; LLMs</span>
-                            <span class="chip chip-accent">MLOps</span>
-                            <span class="chip chip-accent">Data Analytics</span>
-                        </div>
                     </aside>
+                </div>
+
+                <div class="hero-stats reveal">
+                    <div class="hero-stat"><div class="hero-stat-value">5</div><div class="hero-stat-label">End-to-end projects</div></div>
+                    <div class="hero-stat"><div class="hero-stat-value">550+</div><div class="hero-stat-label">Automated tests</div></div>
+                    <div class="hero-stat"><div class="hero-stat-value">4</div><div class="hero-stat-label">CI pipelines</div></div>
+                    <div class="hero-stat"><div class="hero-stat-value">1</div><div class="hero-stat-label">Live deployment</div></div>
                 </div>
             </div>
         </section>
 
-        <!-- Projects -->
-        <section id="projects">
+        <!-- ============================== Projects ============================== -->
+        <section id="projects" class="section-alt" aria-labelledby="projects-title">
             <div class="container">
                 <div class="section-head reveal">
-                    <span class="eyebrow">Projects</span>
-                    <h2>Featured work</h2>
-                    <p>Each project is a complete repository with documentation, tests and reproducible results. Open "Design notes and limits" on any card for the trade-offs.</p>
+                    <div class="section-head-text">
+                        <span class="eyebrow">Featured projects</span>
+                        <h2 id="projects-title">Selected work</h2>
+                        <p>Each card follows Situation, Task, Action, Result. Every number comes from a held-out test split or a fixed evaluation set.</p>
+                    </div>
+                    <div class="segmented" id="project-filters" role="group" aria-label="Filter projects">
+                        <button class="seg" type="button" data-filter="all" aria-pressed="true">All</button>
+                        <button class="seg" type="button" data-filter="llm" aria-pressed="false">LLMs &amp; RAG</button>
+                        <button class="seg" type="button" data-filter="ml" aria-pressed="false">ML &amp; NLP</button>
+                        <button class="seg" type="button" data-filter="mlops" aria-pressed="false">MLOps</button>
+                    </div>
                 </div>
 
-                <div class="filters reveal" role="group" aria-label="Filter projects">
-                    <button class="filter" data-filter="all" aria-pressed="true">All</button>
-                    <button class="filter" data-filter="llm" aria-pressed="false">LLMs &amp; RAG</button>
-                    <button class="filter" data-filter="ml" aria-pressed="false">Machine Learning &amp; NLP</button>
-                    <button class="filter" data-filter="mlops" aria-pressed="false">MLOps</button>
-                </div>
-
-                <div class="projects-grid">
+                <div class="bento">
 
                     <!-- FloatChat -->
-                    <article class="card project featured reveal" data-tags="llm">
-                        <div>
-                            <div class="project-top">
-                                <span class="category">LLM · RAG · Text-to-SQL</span>
-                                <span class="featured-badge">Featured</span>
-                            </div>
-                            <h3>FloatChat: Conversational Access to ARGO Ocean Data</h3>
-                            <p class="project-sub">Based on Smart India Hackathon 2025 problem statement SIH25040, Ministry of Earth Sciences</p>
-                            <p class="project-desc">Ask questions about Indian Ocean ARGO float data in plain English. A router sends each question either to cited retrieval over generated float and region summaries, or to text-to-SQL that is validated and run as a read-only database user. Every answer shows its evidence (route, SQL, rows, chart, citations), and questions the data cannot answer are refused instead of invented. Everything runs on a local open-weights model.</p>
-                            <ul class="highlights">
-                                <li>Four layers of SQL safety: scope gate, 14-rule validator, read-only Postgres role and a 5 s statement timeout, plus deterministic answer checks that drive one targeted repair attempt.</li>
-                                <li>OpenTelemetry traces exposed a silent bug: Ollama's default 4,096-token window was cutting off a roughly 4,165-token prompt. Fixed with <code>num_ctx</code> 6144 on every call and a guard test.</li>
-                                <li>Separate evaluation harnesses for retrieval, generation and SQL, plus a McNemar A/B test. The README reports failures and retractions, not just wins.</li>
-                                <li>Ingests real NetCDF data (corrected values, QC flags) into PostgreSQL with PostGIS sea polygons: 80 floats, 1,099 profiles, 175,364 measurements, plus 187 drifting buoys.</li>
-                            </ul>
-                            <details class="notes">
-                                <summary>Design notes and limits</summary>
-                                <div class="notes-body">
-                                    <p><strong>Honest numbers:</strong> SQL accuracy is from a single run and can move by about 0.1 between runs; window-function questions are still weak (2 of 6).</p>
-                                    <p><strong>Trade-offs:</strong> median about 38 s per SQL question on a laptop CPU, at zero API cost. Not deployed to the cloud by choice; CI builds and pushes Docker images to GHCR.</p>
-                                </div>
-                            </details>
+                    <article class="card project span-4 reveal" data-group="llm" data-spotlight>
+                        <div class="thumb" aria-hidden="true">
+                            <svg viewBox="0 0 600 190" preserveAspectRatio="xMidYMid meet" overflow="visible" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                                <path d="M-400 128 Q-350 114 -300 128 T-200 128 T-100 128 T0 128 T100 128 T200 128 T300 128 T400 128 T500 128 T600 128 T700 128 T800 128 T900 128 T1000 128" stroke-opacity="0.6"/>
+                                <path d="M-400 150 Q-350 136 -300 150 T-200 150 T-100 150 T0 150 T100 150 T200 150 T300 150 T400 150 T500 150 T600 150 T700 150 T800 150 T900 150 T1000 150" stroke-opacity="0.4"/>
+                                <path d="M-400 172 Q-350 158 -300 172 T-200 172 T-100 172 T0 172 T100 172 T200 172 T300 172 T400 172 T500 172 T600 172 T700 172 T800 172 T900 172 T1000 172" stroke-opacity="0.25"/>
+                                <path d="M150 44v130" stroke-dasharray="4 6" stroke-opacity="0.6"/>
+                                <rect x="138" y="26" width="24" height="20" rx="6" class="hi" stroke="currentColor"/>
+                                <g class="hi" fill="currentColor" stroke="none">
+                                    <circle cx="172" cy="62" r="4"/><circle cx="186" cy="80" r="4"/><circle cx="196" cy="100" r="4"/>
+                                    <circle cx="201" cy="120" r="4"/><circle cx="204" cy="140" r="4"/><circle cx="205" cy="160" r="4"/>
+                                </g>
+                                <path d="M172 62 C188 80 198 110 205 160" class="hi" stroke-opacity="0.5"/>
+                                <g class="hi">
+                                    <rect x="330" y="30" width="230" height="84" rx="16" style="fill: var(--surface)"/>
+                                    <path d="M360 114l-10 18 26-18" style="fill: var(--surface)"/>
+                                    <text x="352" y="62" font-family="JetBrains Mono, monospace" font-size="15" fill="currentColor" stroke="none">SELECT avg(temp)</text>
+                                    <text x="352" y="88" font-family="JetBrains Mono, monospace" font-size="15" fill="currentColor" stroke="none" fill-opacity="0.6">FROM measurements</text>
+                                </g>
+                                <rect x="506" y="44" width="36" height="22" rx="6" class="hi" stroke-opacity="0.6"/>
+                                <text x="524" y="60" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="currentColor" stroke="none" class="hi">[1]</text>
+                            </svg>
                         </div>
-                        <div class="featured-side">
-                            <div class="metrics">
-                                <div class="metric"><div class="metric-value">0.667</div><div class="metric-label">Text-to-SQL execution accuracy (40/60, single run)</div></div>
-                                <div class="metric"><div class="metric-value">0.957</div><div class="metric-label">Retrieval hit@4 on 23 summary questions</div></div>
-                                <div class="metric"><div class="metric-value">22/22</div><div class="metric-label">Answers with correct citations</div></div>
-                                <div class="metric"><div class="metric-value">7/7</div><div class="metric-label">Unanswerable questions correctly refused</div></div>
-                                <div class="metric"><div class="metric-value">476</div><div class="metric-label">Tests, no database or model needed</div></div>
-                                <div class="metric"><div class="metric-value">$0</div><div class="metric-label">API cost, local Llama 3.1 8B</div></div>
+                        <div class="project-body">
+                            <div class="project-main">
+                                <div class="project-top">
+                                    <span class="category">LLM · RAG · Text-to-SQL</span>
+                                    <span class="status status-featured">Featured</span>
+                                </div>
+                                <h3>FloatChat: Conversational ARGO Ocean Data</h3>
+                                <p class="project-sub">Smart India Hackathon 2025 problem statement SIH25040, Ministry of Earth Sciences</p>
+                                <dl class="star">
+                                    <div class="star-row"><dt title="Situation">S</dt><dd>ARGO ocean data is free but locked in NetCDF files with quality flags, so most people who need it cannot query it.</dd></div>
+                                    <div class="star-row"><dt title="Task">T</dt><dd>Let anyone ask plain-English questions and get answers they can verify, without the model inventing facts.</dd></div>
+                                    <div class="star-row"><dt title="Action">A</dt><dd>Loaded <b>175,364 real measurements</b> into PostgreSQL + PostGIS, routed questions between cited RAG and <b>validated text-to-SQL run as a read-only role</b>, and traced every step with OpenTelemetry.</dd></div>
+                                    <div class="star-row"><dt title="Result">R</dt><dd>Every answer shows its evidence. Tracing also caught a silent prompt-truncation bug, fixed with a guard test. All on a local Llama 3.1 at zero API cost.</dd></div>
+                                </dl>
                             </div>
-                            <div class="tags">
-                                <span class="chip">Python</span><span class="chip">FastAPI</span><span class="chip">React</span>
-                                <span class="chip">PostgreSQL</span><span class="chip">PostGIS</span><span class="chip">pgvector</span>
-                                <span class="chip">Ollama · Llama 3.1</span><span class="chip">bge-small</span><span class="chip">OpenTelemetry</span>
-                                <span class="chip">Docker</span><span class="chip">GitHub Actions</span>
-                            </div>
-                            <div class="project-links">
-                                <a class="btn btn-ghost btn-sm" href="https://github.com/poojithareddy19/FloatChat-ARGO-RAG" target="_blank" rel="noopener">
-                                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12.02c0 4.42 2.87 8.17 6.84 9.5.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.64-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.03A9.56 9.56 0 0 1 12 6.84c.85 0 1.7.11 2.5.34 1.91-1.3 2.75-1.03 2.75-1.03.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10.02 10.02 0 0 0 22 12.02C22 6.48 17.52 2 12 2z"/></svg>
-                                    View code
-                                </a>
+                            <div class="project-side">
+                                <div class="metrics">
+                                    <div class="metric"><div class="metric-value">0.667</div><div class="metric-label">Text-to-SQL execution accuracy (40/60, single run)</div></div>
+                                    <div class="metric"><div class="metric-value">0.957</div><div class="metric-label">Retrieval hit@4</div></div>
+                                    <div class="metric"><div class="metric-value">22/22</div><div class="metric-label">Answers with correct citations</div></div>
+                                    <div class="metric"><div class="metric-value">7/7</div><div class="metric-label">Unanswerable questions refused</div></div>
+                                </div>
+                                <div class="tags">
+                                    <span class="chip">Python</span><span class="chip">FastAPI</span><span class="chip">React</span><span class="chip">PostgreSQL</span>
+                                    <span class="chip">PostGIS</span><span class="chip">pgvector</span><span class="chip">Ollama</span><span class="chip">OpenTelemetry</span>
+                                    <span class="chip">Docker</span><span class="chip">476 tests</span>
+                                </div>
+                                <div class="project-links">
+                                    <a class="btn btn-ghost btn-sm" href="https://github.com/poojithareddy19/FloatChat-ARGO-RAG" target="_blank" rel="noopener">
+                                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12.02c0 4.42 2.87 8.17 6.84 9.5.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.64-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.03A9.56 9.56 0 0 1 12 6.84c.85 0 1.7.11 2.5.34 1.91-1.3 2.75-1.03 2.75-1.03.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10.02 10.02 0 0 0 22 12.02C22 6.48 17.52 2 12 2z"/></svg>
+                                        GitHub
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </article>
 
                     <!-- Daily Temperature Forecasting -->
-                    <article class="card project reveal" data-tags="mlops ml">
-                        <div class="project-top">
-                            <span class="category">MLOps · Time series</span>
-                            <span class="status status-live">Live · v1.0.0</span>
+                    <article class="card project span-2-tall reveal" data-group="mlops ml" data-spotlight>
+                        <div class="thumb" aria-hidden="true">
+                            <svg viewBox="0 0 400 150" preserveAspectRatio="xMidYMid meet" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <g stroke-opacity="0.18"><path d="M0 30h400M0 60h400M0 90h400M0 120h400"/></g>
+                                <path d="M20 104 L50 92 L80 106 L110 82 L140 90 L170 72 L200 80 L230 62 L260 74 L290 58" class="hi"/>
+                                <path d="M290 58 L330 46" class="hi" stroke-dasharray="5 6"/>
+                                <circle cx="330" cy="46" r="6" class="hi" fill="currentColor" stroke="none"/>
+                                <path d="M290 20v112" stroke-dasharray="3 6" stroke-opacity="0.5"/>
+                                <text x="296" y="140" font-family="JetBrains Mono, monospace" font-size="12" fill="currentColor" stroke="none">today</text>
+                                <text x="342" y="42" font-family="JetBrains Mono, monospace" font-size="12" fill="currentColor" stroke="none" class="hi">t+1</text>
+                            </svg>
                         </div>
-                        <h3>Daily Temperature Forecasting</h3>
-                        <p class="project-desc">A production-style MLOps microservice that predicts tomorrow's minimum temperature from the previous 30 days. The model is deliberately simple; the engineering around it is the point: a reproducible pipeline, leakage-safe features, train/serve parity, gated CI/CD and drift monitoring.</p>
-                        <div class="metrics">
-                            <div class="metric"><div class="metric-value">2.147°C</div><div class="metric-label">Test RMSE on the last 724 days</div></div>
-                            <div class="metric"><div class="metric-value">~13%</div><div class="metric-label">Lower RMSE than persistence (2.478°C)</div></div>
-                            <div class="metric"><div class="metric-value">Exact</div><div class="metric-label">Metrics reproduced by <code>dvc repro</code></div></div>
-                        </div>
-                        <ul class="highlights">
-                            <li>Leakage-safe features (rolling windows end yesterday) and a chronological train/test split with no shuffling.</li>
-                            <li>Protected <code>main</code>: PRs need green CI (ruff, black, pytest). CD pushes images to GHCR, and Render only switches traffic after <code>/health</code> passes.</li>
-                            <li>Prometheus metrics, MLflow experiment tracking and an Evidently drift report. No secrets in the repo.</li>
-                        </ul>
-                        <details class="notes">
-                            <summary>Design notes and limits</summary>
-                            <div class="notes-body">
-                                <p><strong>Scope:</strong> trained on Melbourne data (1981 to 1990), so it is Melbourne-only; a random forest cannot extrapolate to hotter climates. The web page still lets you try any place via Open-Meteo.</p>
-                                <p><strong>Hosting:</strong> Render free tier, so the first request after idle can take a minute to wake up.</p>
+                        <div class="project-body">
+                            <div class="project-top">
+                                <span class="category">MLOps · Time series</span>
+                                <span class="status status-live">Live · v1.0.0</span>
                             </div>
-                        </details>
-                        <div class="tags">
-                            <span class="chip">scikit-learn</span><span class="chip">FastAPI</span><span class="chip">DVC</span><span class="chip">MLflow</span>
-                            <span class="chip">Docker</span><span class="chip">GitHub Actions</span><span class="chip">Render</span><span class="chip">Prometheus</span><span class="chip">Evidently</span>
-                        </div>
-                        <div class="project-links">
-                            <a class="btn btn-primary btn-sm" href="https://temperature-forecast-api-mejw.onrender.com" target="_blank" rel="noopener">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>
-                                Live demo
-                            </a>
-                            <a class="btn btn-ghost btn-sm" href="https://github.com/poojithareddy19/Daily-Temperature-Forecasting" target="_blank" rel="noopener">View code</a>
+                            <h3>Daily Temperature Forecasting</h3>
+                            <div class="metrics">
+                                <div class="metric"><div class="metric-value">2.147°C</div><div class="metric-label">Test RMSE, 724 days</div></div>
+                                <div class="metric"><div class="metric-value">~13%</div><div class="metric-label">Better than persistence</div></div>
+                                <div class="metric"><div class="metric-value">Exact</div><div class="metric-label">Reproduced by DVC</div></div>
+                            </div>
+                            <dl class="star">
+                                <div class="star-row"><dt title="Situation">S</dt><dd>Most ML work stops at a notebook: not reproducible, leaky, unmonitored.</dd></div>
+                                <div class="star-row"><dt title="Task">T</dt><dd>Ship a next-day temperature model the way production teams do.</dd></div>
+                                <div class="star-row"><dt title="Action">A</dt><dd>DVC pipeline, leakage-safe features, FastAPI, <b>gated CI/CD</b> to Render, drift monitoring.</dd></div>
+                                <div class="star-row"><dt title="Result">R</dt><dd><b>Live v1.0.0</b>; RMSE 2.147°C vs 2.478°C for the persistence baseline.</dd></div>
+                            </dl>
+                            <div class="tags">
+                                <span class="chip">scikit-learn</span><span class="chip">FastAPI</span><span class="chip">DVC</span><span class="chip">MLflow</span>
+                                <span class="chip">Docker</span><span class="chip">GitHub Actions</span><span class="chip">Render</span>
+                            </div>
+                            <div class="project-links">
+                                <a class="btn btn-primary btn-sm" href="https://temperature-forecast-api-mejw.onrender.com" target="_blank" rel="noopener">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>
+                                    Live demo
+                                </a>
+                                <a class="btn btn-ghost btn-sm" href="https://github.com/poojithareddy19/Daily-Temperature-Forecasting" target="_blank" rel="noopener">GitHub</a>
+                            </div>
                         </div>
                     </article>
 
                     <!-- Customer Churn -->
-                    <article class="card project reveal" data-tags="ml">
-                        <div class="project-top">
-                            <span class="category">Machine Learning · Classification</span>
-                            <span class="status status-local">Complete · runs locally</span>
+                    <article class="card project reveal" data-group="ml" data-spotlight>
+                        <div class="thumb" aria-hidden="true">
+                            <svg viewBox="0 0 400 150" preserveAspectRatio="xMidYMid meet" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                                <path d="M30 128h350M30 128V18" stroke-opacity="0.35"/>
+                                <path d="M30 124 C130 124 150 28 370 24" class="hi"/>
+                                <path d="M66 18v110" class="hi" stroke-dasharray="5 6"/>
+                                <text x="74" y="30" font-family="JetBrains Mono, monospace" font-size="12" fill="currentColor" stroke="none" class="hi">t = 0.08</text>
+                                <g fill="currentColor" stroke="none" fill-opacity="0.55">
+                                    <circle cx="110" cy="116" r="3.5"/><circle cx="150" cy="96" r="3.5"/><circle cx="185" cy="66" r="3.5"/>
+                                    <circle cx="230" cy="44" r="3.5"/><circle cx="290" cy="32" r="3.5"/><circle cx="340" cy="27" r="3.5"/>
+                                </g>
+                            </svg>
                         </div>
-                        <h3>Telco Customer Churn Prediction</h3>
-                        <p class="project-desc">A calibrated XGBoost classifier that flags telecom customers likely to leave. The decision threshold is chosen by minimising business cost instead of using the default 0.5, and a Streamlit form shows the churn probability, a risk verdict and the expected cost of acting versus not acting.</p>
-                        <div class="metrics">
-                            <div class="metric"><div class="metric-value">0.944</div><div class="metric-label">Churn recall on test (353 of 374 churners)</div></div>
-                            <div class="metric"><div class="metric-value">0.836</div><div class="metric-label">Test ROC-AUC</div></div>
-                            <div class="metric"><div class="metric-value">0.140</div><div class="metric-label">Brier score (calibrated)</div></div>
-                        </div>
-                        <ul class="highlights">
-                            <li>Found and fixed data leakage in my original notebook: encoding and SMOTE ran before cross-validation and inflated fold scores from about 0.72 to 0.90. Both now run inside the pipeline, per fold.</li>
-                            <li>Cost-based threshold (missed churner 780 vs wasted offer 65) picked on validation at 0.08, matching the theoretical 0.077. The test split is touched once.</li>
-                            <li>Model, threshold and feature order ship in one artifact, so the app cannot drift from training.</li>
-                        </ul>
-                        <details class="notes">
-                            <summary>Design notes and limits</summary>
-                            <div class="notes-body">
-                                <p><strong>Trade-off:</strong> catching 94% of churners costs precision (0.40). That is intended when a missed churner costs 12 times more than an offer, and at 0.5 the test cost would be 2.7 times higher.</p>
-                                <p><strong>Caveat:</strong> the cost figures are assumptions, and the dataset is a static snapshot (IBM Telco, 7,043 customers).</p>
+                        <div class="project-body">
+                            <div class="project-top">
+                                <span class="category">ML · Classification</span>
+                                <span class="status">Runs locally</span>
                             </div>
-                        </details>
-                        <div class="tags">
-                            <span class="chip">Python</span><span class="chip">scikit-learn</span><span class="chip">XGBoost</span>
-                            <span class="chip">imbalanced-learn</span><span class="chip">Streamlit</span><span class="chip">pytest</span>
-                        </div>
-                        <div class="project-links">
-                            <a class="btn btn-ghost btn-sm" href="https://github.com/poojithareddy19/Customer-Churn-Prediction" target="_blank" rel="noopener">View code</a>
+                            <h3>Telco Customer Churn Prediction</h3>
+                            <div class="metrics">
+                                <div class="metric"><div class="metric-value">0.944</div><div class="metric-label">Churn recall on test</div></div>
+                                <div class="metric"><div class="metric-value">0.836</div><div class="metric-label">Test ROC-AUC</div></div>
+                                <div class="metric"><div class="metric-value">0.140</div><div class="metric-label">Brier score</div></div>
+                            </div>
+                            <dl class="star">
+                                <div class="star-row"><dt title="Situation">S</dt><dd>My first notebook leaked data, inflating CV scores from about 0.72 to 0.90.</dd></div>
+                                <div class="star-row"><dt title="Task">T</dt><dd>Rebuild it leakage-free and optimise business cost, not accuracy.</dd></div>
+                                <div class="star-row"><dt title="Action">A</dt><dd>Per-fold preprocessing, <b>calibrated XGBoost</b>, cost-based threshold picked on validation.</dd></div>
+                                <div class="star-row"><dt title="Result">R</dt><dd>Catches <b>353 of 374 churners</b> on held-out test, up from 59% recall.</dd></div>
+                            </dl>
+                            <div class="tags">
+                                <span class="chip">XGBoost</span><span class="chip">scikit-learn</span><span class="chip">imbalanced-learn</span><span class="chip">Streamlit</span>
+                            </div>
+                            <div class="project-links">
+                                <a class="btn btn-ghost btn-sm" href="https://github.com/poojithareddy19/Customer-Churn-Prediction" target="_blank" rel="noopener">GitHub</a>
+                            </div>
                         </div>
                     </article>
 
                     <!-- Chat with Documents -->
-                    <article class="card project reveal" data-tags="llm">
-                        <div class="project-top">
-                            <span class="category">LLM · RAG</span>
-                            <span class="status status-local">Complete · runs locally</span>
+                    <article class="card project reveal" data-group="llm" data-spotlight>
+                        <div class="thumb" aria-hidden="true">
+                            <svg viewBox="0 0 400 150" preserveAspectRatio="xMidYMid meet" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                                <rect x="62" y="30" width="110" height="112" rx="10" stroke-opacity="0.4"/>
+                                <rect x="82" y="16" width="110" height="120" rx="10" style="fill: var(--surface)" class="hi"/>
+                                <g stroke-opacity="0.45"><path d="M98 40h70M98 56h78M98 72h60M98 104h74M98 120h52"/></g>
+                                <path d="M98 88h64" class="hi" stroke-width="6"/>
+                                <path d="M168 88 C210 88 212 62 240 62" class="hi" stroke-dasharray="4 6"/>
+                                <rect x="240" y="40" width="130" height="44" rx="12" class="hi" style="fill: var(--surface)"/>
+                                <text x="305" y="67" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="currentColor" stroke="none" class="hi">[1] p. 16</text>
+                            </svg>
                         </div>
-                        <h3>Chat with Documents</h3>
-                        <p class="project-desc">Private question answering over your PDFs with page-level citations. PDF parsing, embeddings, vector search and the language model all run on your own machine, so documents never leave it. Rebuilt from an old LangChain tutorial into a framework-free, tested Python package.</p>
-                        <div class="metrics">
-                            <div class="metric"><div class="metric-value">0.80</div><div class="metric-label">Recall@5, frozen question set (0.87 after adjudication)</div></div>
-                            <div class="metric"><div class="metric-value">30</div><div class="metric-label">Hand-written questions on a 99-page manual</div></div>
-                            <div class="metric"><div class="metric-value">29</div><div class="metric-label">Tests in about 1 s, no model needed</div></div>
-                        </div>
-                        <ul class="highlights">
-                            <li>Chunks never cross page boundaries, so every citation maps back to an exact file, page and similarity score.</li>
-                            <li>Refuses instead of guessing: when retrieval is weak, the model says the documents do not contain the answer.</li>
-                            <li>Tests use a fake embedder, a fake HTTP session and hand-built PDFs, so CI runs on Python 3.9 and 3.12 without torch or Ollama.</li>
-                        </ul>
-                        <details class="notes">
-                            <summary>Design notes and limits</summary>
-                            <div class="notes-body">
-                                <p><strong>Evaluation:</strong> questions were written from the pages before any retrieval ran. Both the frozen and adjudicated scores are published so the correction is visible.</p>
-                                <p><strong>Next step:</strong> the misses are exact-identifier lookups and paraphrase gaps, which point to hybrid BM25 retrieval. No OCR yet for scanned PDFs.</p>
+                        <div class="project-body">
+                            <div class="project-top">
+                                <span class="category">LLM · RAG</span>
+                                <span class="status">Runs locally</span>
                             </div>
-                        </details>
-                        <div class="tags">
-                            <span class="chip">Python</span><span class="chip">sentence-transformers</span><span class="chip">FAISS</span>
-                            <span class="chip">Ollama · Llama 3.1</span><span class="chip">Streamlit</span><span class="chip">GitHub Actions</span>
-                        </div>
-                        <div class="project-links">
-                            <a class="btn btn-ghost btn-sm" href="https://github.com/poojithareddy19/Chat-With-Documents" target="_blank" rel="noopener">View code</a>
+                            <h3>Chat with Documents</h3>
+                            <div class="metrics">
+                                <div class="metric"><div class="metric-value">0.80</div><div class="metric-label">Recall@5, frozen set</div></div>
+                                <div class="metric"><div class="metric-value">0.66</div><div class="metric-label">MRR, frozen set</div></div>
+                                <div class="metric"><div class="metric-value">29</div><div class="metric-label">Tests, about 1 s</div></div>
+                            </div>
+                            <dl class="star">
+                                <div class="star-row"><dt title="Situation">S</dt><dd>Keyword search misses paraphrases; cloud chatbots expose private files.</dd></div>
+                                <div class="star-row"><dt title="Task">T</dt><dd>Answer questions over PDFs on-device, with checkable citations.</dd></div>
+                                <div class="star-row"><dt title="Action">A</dt><dd>Framework-free: page-bounded chunks, FAISS, <b>local Llama 3.1</b>, 30-question eval.</dd></div>
+                                <div class="star-row"><dt title="Result">R</dt><dd>Page-level citations, refuses weak answers; <b>0.87</b> recall@5 after adjudication.</dd></div>
+                            </dl>
+                            <div class="tags">
+                                <span class="chip">FAISS</span><span class="chip">sentence-transformers</span><span class="chip">Ollama</span><span class="chip">Streamlit</span>
+                            </div>
+                            <div class="project-links">
+                                <a class="btn btn-ghost btn-sm" href="https://github.com/poojithareddy19/Chat-With-Documents" target="_blank" rel="noopener">GitHub</a>
+                            </div>
                         </div>
                     </article>
 
                     <!-- TweetEval -->
-                    <article class="card project reveal" data-tags="ml">
-                        <div class="project-top">
-                            <span class="category">NLP · Deep learning</span>
-                            <span class="status status-local">Complete · runs locally</span>
+                    <article class="card project reveal" data-group="ml" data-spotlight>
+                        <div class="thumb" aria-hidden="true">
+                            <svg viewBox="0 0 400 150" preserveAspectRatio="xMidYMid meet" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                                <g font-family="JetBrains Mono, monospace" font-size="13" fill="currentColor" stroke="none">
+                                    <text x="40" y="45">neg</text><text x="40" y="81">neu</text><text x="40" y="117">pos</text>
+                                </g>
+                                <g class="hi" fill="currentColor" stroke="none">
+                                    <rect x="84" y="33" width="45" height="16" rx="4"/>
+                                    <rect x="84" y="69" width="126" height="16" rx="4" fill-opacity="0.55"/>
+                                    <rect x="84" y="105" width="109" height="16" rx="4" fill-opacity="0.8"/>
+                                </g>
+                                <g font-family="JetBrains Mono, monospace" font-size="12" fill="currentColor" stroke="none">
+                                    <text x="138" y="45">16%</text><text x="219" y="81">45%</text><text x="202" y="117">39%</text>
+                                </g>
+                                <rect x="276" y="36" width="96" height="74" rx="14" stroke-opacity="0.5"/>
+                                <path d="M294 60h60M294 76h44M294 92h52" stroke-opacity="0.4"/>
+                            </svg>
                         </div>
-                        <h3>TweetEval Sentiment Analysis</h3>
-                        <p class="project-desc">Four model families (TF-IDF with Logistic Regression, BiLSTM, BiGRU and RoBERTa) classify tweets as negative, neutral or positive. All are trained on the official TweetEval splits, scored with one shared metrics function and compared side by side in a Streamlit app.</p>
-                        <div class="metrics">
-                            <div class="metric"><div class="metric-value">0.599</div><div class="metric-label">Macro recall, TF-IDF + LR (official metric)</div></div>
-                            <div class="metric"><div class="metric-value">12,284</div><div class="metric-label">Tweets in the official test split</div></div>
-                            <div class="metric"><div class="metric-value">38</div><div class="metric-label">Tests with CI on every push</div></div>
-                        </div>
-                        <ul class="highlights">
-                            <li>A tuned linear baseline beat both RNNs on test accuracy, while class weighting let the BiGRU catch 3,177 of 3,972 negative tweets versus 2,498 for LR.</li>
-                            <li>Each model ships an <code>inference_config.json</code>, so the app always applies the preprocessing it was trained with.</li>
-                            <li>New preprocessing is proven byte-identical to the old default by test, with emoticon handling added as an opt-in.</li>
-                        </ul>
-                        <details class="notes">
-                            <summary>Design notes and limits</summary>
-                            <div class="notes-body">
-                                <p><strong>Honest gap:</strong> the committed RoBERTa weights started from a model already tuned on this task, so its score is not comparable and is not reported. A fair GPU retrain from a tweet-pretrained base is the next step.</p>
-                                <p><strong>Imbalance:</strong> only 16% of training tweets are negative, handled with balanced class weights.</p>
+                        <div class="project-body">
+                            <div class="project-top">
+                                <span class="category">NLP · Deep learning</span>
+                                <span class="status">Runs locally</span>
                             </div>
-                        </details>
-                        <div class="tags">
-                            <span class="chip">scikit-learn</span><span class="chip">TensorFlow / Keras</span><span class="chip">PyTorch</span>
-                            <span class="chip">Hugging Face</span><span class="chip">Streamlit</span><span class="chip">Git LFS</span>
-                        </div>
-                        <div class="project-links">
-                            <a class="btn btn-ghost btn-sm" href="https://github.com/poojithareddy19/TweetEval-Sentiment-Analysis" target="_blank" rel="noopener">View code</a>
+                            <h3>TweetEval Sentiment Analysis</h3>
+                            <div class="metrics">
+                                <div class="metric"><div class="metric-value">0.599</div><div class="metric-label">Macro recall, TF-IDF + LR</div></div>
+                                <div class="metric"><div class="metric-value">12,284</div><div class="metric-label">Test tweets</div></div>
+                                <div class="metric"><div class="metric-value">38</div><div class="metric-label">Tests + CI</div></div>
+                            </div>
+                            <dl class="star">
+                                <div class="star-row"><dt title="Situation">S</dt><dd>Tweets are noisy and skewed: only 16% of training tweets are negative.</dd></div>
+                                <div class="star-row"><dt title="Task">T</dt><dd>Compare classical, recurrent and transformer models fairly.</dd></div>
+                                <div class="star-row"><dt title="Action">A</dt><dd>Official splits, <b>one shared metrics function</b>, per-model configs, class weights.</dd></div>
+                                <div class="star-row"><dt title="Result">R</dt><dd>Linear baseline beat both RNNs; <b>BiGRU caught 3,177 of 3,972</b> negatives.</dd></div>
+                            </dl>
+                            <div class="tags">
+                                <span class="chip">TensorFlow</span><span class="chip">PyTorch</span><span class="chip">Hugging Face</span><span class="chip">scikit-learn</span>
+                            </div>
+                            <div class="project-links">
+                                <a class="btn btn-ghost btn-sm" href="https://github.com/poojithareddy19/TweetEval-Sentiment-Analysis" target="_blank" rel="noopener">GitHub</a>
+                            </div>
                         </div>
                     </article>
 
@@ -721,164 +396,284 @@
             </div>
         </section>
 
-        <!-- Experience & Education -->
-        <section id="experience" class="section-alt">
+        <!-- ============================== Skills ============================== -->
+        <section id="skills" aria-labelledby="skills-title">
             <div class="container">
                 <div class="section-head reveal">
-                    <span class="eyebrow">Experience</span>
-                    <h2>Experience &amp; education</h2>
+                    <div class="section-head-text">
+                        <span class="eyebrow">Skills &amp; expertise</span>
+                        <h2 id="skills-title">What I work with</h2>
+                        <p>Tools I have used in the projects above, grouped by area.</p>
+                    </div>
+                    <div class="segmented" id="skill-filters" role="group" aria-label="Filter skills">
+                        <button class="seg" type="button" data-filter="all" aria-pressed="true">All</button>
+                        <button class="seg" type="button" data-filter="core" aria-pressed="false">Core</button>
+                        <button class="seg" type="button" data-filter="ml" aria-pressed="false">ML &amp; AI</button>
+                        <button class="seg" type="button" data-filter="eng" aria-pressed="false">Engineering</button>
+                        <button class="seg" type="button" data-filter="data" aria-pressed="false">Data</button>
+                    </div>
                 </div>
-                <div class="timeline">
-                    <article class="card tl-item reveal">
-                        <div class="tl-head">
-                            <div>
-                                <h3>Data Analytics Intern</h3>
-                                <p class="tl-org">ThinkMates EduTech Pvt. Ltd</p>
-                            </div>
-                            <span class="tl-date">Mar 2025 - Jul 2025</span>
-                        </div>
-                        <ul class="highlights">
-                            <li>Analysed a 12K+ record Zomato (Pune) dataset with Python, Excel and Power BI to uncover customer behaviour, pricing trends and restaurant performance.</li>
-                            <li>Cleaned the data and engineered features (price tiers, rating bands, locality clusters, amenity indicators) to make KPIs accurate and consistent.</li>
-                            <li>Built three tiers of interactive dashboards (Sales, Manager, CEO) with SQL, Power BI and Excel to support strategic and operational decisions.</li>
-                        </ul>
-                        <div class="tags">
-                            <span class="chip">Power BI</span><span class="chip">SQL</span><span class="chip">Excel</span><span class="chip">Python</span><span class="chip">KPI design</span>
-                        </div>
-                    </article>
-                    <article class="card tl-item reveal">
-                        <div class="tl-head">
-                            <div>
-                                <h3>B.Tech, Computer Science (AI &amp; ML)</h3>
-                                <p class="tl-org">TKR College of Engineering and Technology (JNTUH), Hyderabad</p>
-                            </div>
-                            <span class="tl-date">2022 - 2026</span>
-                        </div>
-                        <ul class="highlights">
-                            <li>Graduated with a CGPA of 8.12 / 10.</li>
-                            <li>Coursework and projects in machine learning, deep learning, NLP and data analytics.</li>
-                        </ul>
-                    </article>
-                </div>
-            </div>
-        </section>
 
-        <!-- Skills -->
-        <section id="skills">
-            <div class="container">
-                <div class="section-head reveal">
-                    <span class="eyebrow">Skills</span>
-                    <h2>Tech stack &amp; expertise</h2>
-                    <p>The tools I have used in the projects above, not just studied.</p>
-                </div>
                 <div class="skills-grid">
-                    <div class="card skill-group reveal">
+                    <div class="card skill-group reveal" data-group="core" data-spotlight>
+                        <div class="skill-group-head">
+                            <div class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg></div>
+                            <h3>Core competencies</h3><span class="count">8</span>
+                        </div>
+                        <div class="tags"><span class="chip">End-to-end ML pipelines</span><span class="chip">Model evaluation &amp; baselines</span><span class="chip">Leakage-safe validation</span><span class="chip">RAG system design</span><span class="chip">Text-to-SQL</span><span class="chip">Probability calibration</span><span class="chip">KPI &amp; dashboard design</span><span class="chip">Technical documentation</span></div>
+                    </div>
+                    <div class="card skill-group reveal" data-group="eng" data-spotlight>
                         <div class="skill-group-head">
                             <div class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6l-6 6 6 6M16 6l6 6-6 6"/></svg></div>
-                            <h3>Languages &amp; APIs</h3>
+                            <h3>Languages &amp; APIs</h3><span class="count">7</span>
                         </div>
                         <div class="tags"><span class="chip">Python</span><span class="chip">SQL</span><span class="chip">PostgreSQL</span><span class="chip">MySQL</span><span class="chip">FastAPI</span><span class="chip">Streamlit</span><span class="chip">React (basics)</span></div>
                     </div>
-                    <div class="card skill-group reveal">
+                    <div class="card skill-group reveal" data-group="ml" data-spotlight>
                         <div class="skill-group-head">
                             <div class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/></svg></div>
-                            <h3>Machine learning &amp; NLP</h3>
+                            <h3>Machine learning &amp; NLP</h3><span class="count">6</span>
                         </div>
                         <div class="tags"><span class="chip">scikit-learn</span><span class="chip">XGBoost</span><span class="chip">imbalanced-learn</span><span class="chip">TensorFlow / Keras</span><span class="chip">PyTorch</span><span class="chip">Hugging Face Transformers</span></div>
                     </div>
-                    <div class="card skill-group reveal">
+                    <div class="card skill-group reveal" data-group="ml" data-spotlight>
                         <div class="skill-group-head">
                             <div class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
-                            <h3>LLMs &amp; retrieval</h3>
+                            <h3>LLMs &amp; retrieval</h3><span class="count">7</span>
                         </div>
                         <div class="tags"><span class="chip">RAG</span><span class="chip">Text-to-SQL</span><span class="chip">Ollama</span><span class="chip">Llama 3.1</span><span class="chip">sentence-transformers</span><span class="chip">FAISS</span><span class="chip">pgvector</span></div>
                     </div>
-                    <div class="card skill-group reveal">
+                    <div class="card skill-group reveal" data-group="eng" data-spotlight>
                         <div class="skill-group-head">
                             <div class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8l-9-5-9 5v8l9 5z"/><path d="M3.3 7L12 12l8.7-5M12 22V12"/></svg></div>
-                            <h3>MLOps &amp; infrastructure</h3>
+                            <h3>MLOps &amp; quality</h3><span class="count">12</span>
                         </div>
-                        <div class="tags"><span class="chip">Docker</span><span class="chip">GitHub Actions</span><span class="chip">DVC</span><span class="chip">MLflow</span><span class="chip">Render</span><span class="chip">Prometheus</span><span class="chip">OpenTelemetry</span><span class="chip">Evidently</span></div>
+                        <div class="tags"><span class="chip">Docker</span><span class="chip">GitHub Actions</span><span class="chip">DVC</span><span class="chip">MLflow</span><span class="chip">Render</span><span class="chip">Prometheus</span><span class="chip">OpenTelemetry</span><span class="chip">Evidently</span><span class="chip">pytest</span><span class="chip">ruff</span><span class="chip">pre-commit</span><span class="chip">Git</span></div>
                     </div>
-                    <div class="card skill-group reveal">
+                    <div class="card skill-group reveal" data-group="data" data-spotlight>
                         <div class="skill-group-head">
                             <div class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><rect x="7" y="11" width="3" height="6"/><rect x="12" y="7" width="3" height="10"/><rect x="17" y="13" width="3" height="4"/></svg></div>
-                            <h3>Data &amp; analytics</h3>
+                            <h3>Data &amp; analytics</h3><span class="count">8</span>
                         </div>
                         <div class="tags"><span class="chip">pandas</span><span class="chip">NumPy</span><span class="chip">Matplotlib</span><span class="chip">Seaborn</span><span class="chip">Power BI</span><span class="chip">Excel</span><span class="chip">PostGIS</span><span class="chip">NetCDF / xarray</span></div>
                     </div>
-                    <div class="card skill-group reveal">
-                        <div class="skill-group-head">
-                            <div class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
-                            <h3>Quality &amp; evaluation</h3>
-                        </div>
-                        <div class="tags"><span class="chip">pytest</span><span class="chip">ruff</span><span class="chip">black</span><span class="chip">pre-commit</span><span class="chip">Git</span><span class="chip">Evaluation harnesses</span><span class="chip">A/B significance tests</span></div>
-                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Certifications -->
-        <section id="certifications" class="section-alt">
+        <!-- ============================== Experience timeline ============================== -->
+        <section id="experience" class="section-alt" aria-labelledby="experience-title">
             <div class="container">
                 <div class="section-head reveal">
-                    <span class="eyebrow">Certifications</span>
-                    <h2>Certifications</h2>
+                    <div class="section-head-text">
+                        <span class="eyebrow">Experience</span>
+                        <h2 id="experience-title">Timeline</h2>
+                        <p>Work, education, projects and certifications, newest first.</p>
+                    </div>
+                    <div class="segmented" id="timeline-filters" role="group" aria-label="Filter timeline">
+                        <button class="seg" type="button" data-filter="all" aria-pressed="true">All</button>
+                        <button class="seg" type="button" data-filter="work" aria-pressed="false">Work</button>
+                        <button class="seg" type="button" data-filter="education" aria-pressed="false">Education</button>
+                        <button class="seg" type="button" data-filter="project" aria-pressed="false">Projects</button>
+                        <button class="seg" type="button" data-filter="cert" aria-pressed="false">Certifications</button>
+                    </div>
                 </div>
-                <div class="certs-grid">
-                    <article class="card cert reveal">
-                        <span class="cert-issuer">Oracle</span>
-                        <h3>Certified Generative AI Professional</h3>
-                        <span class="cert-date">Oct 2025</span>
+
+                <ol class="timeline">
+                    <li class="card tl-item major reveal" data-group="project">
+                        <div class="tl-head">
+                            <div><h3 class="tl-title"><span class="tl-type">Project</span>Rebuilt five projects to production standard</h3></div>
+                            <span class="tl-date">Sep 2026</span>
+                        </div>
+                        <p class="tl-desc">FloatChat, Temperature Forecasting (released v1.0.0 and live), Customer Churn, Chat with Documents and TweetEval: tests, CI and documented evaluation for each.</p>
+                    </li>
+                    <li class="card tl-item major reveal" data-group="education">
+                        <div class="tl-head">
+                            <div><h3 class="tl-title"><span class="tl-type">Education</span>Graduated B.Tech, Computer Science (AI &amp; ML)</h3><p class="tl-org">TKR College of Engineering and Technology (JNTUH), Hyderabad</p></div>
+                            <span class="tl-date">2022 - 2026</span>
+                        </div>
+                        <p class="tl-desc">CGPA 8.12 / 10.</p>
+                    </li>
+                    <li class="card tl-item reveal" data-group="project">
+                        <div class="tl-head">
+                            <div><h3 class="tl-title"><span class="tl-type">Project</span>First Customer Churn prototype</h3></div>
+                            <span class="tl-date">Feb 2026</span>
+                        </div>
+                        <p class="tl-desc">Random Forest with SMOTE and a Streamlit app. Later rebuilt after I found a data leak in its validation.</p>
+                    </li>
+                    <li class="card tl-item reveal" data-group="cert">
+                        <div class="tl-head">
+                            <div><h3 class="tl-title"><span class="tl-type">Cert</span>Introduction to Data Science</h3><p class="tl-org">Cisco</p></div>
+                            <span class="tl-date">Dec 2025</span>
+                        </div>
+                    </li>
+                    <li class="card tl-item reveal" data-group="project">
+                        <div class="tl-head">
+                            <div><h3 class="tl-title"><span class="tl-type">Project</span>First TweetEval sentiment system</h3></div>
+                            <span class="tl-date">Nov - Dec 2025</span>
+                        </div>
+                        <p class="tl-desc">Logistic Regression, LSTM and BERT with a Streamlit interface. Later rebuilt with fair, shared evaluation.</p>
+                    </li>
+                    <li class="card tl-item reveal" data-group="cert">
+                        <div class="tl-head">
+                            <div><h3 class="tl-title"><span class="tl-type">Cert</span>Generative AI Professional and Data Science Professional</h3><p class="tl-org">Oracle</p></div>
+                            <span class="tl-date">Oct 2025</span>
+                        </div>
+                    </li>
+                    <li class="card tl-item reveal" data-group="cert">
+                        <div class="tl-head">
+                            <div><h3 class="tl-title"><span class="tl-type">Cert</span>Certified System Administrator (CSA)</h3><p class="tl-org">ServiceNow</p></div>
+                            <span class="tl-date">Jul 2025</span>
+                        </div>
+                    </li>
+                    <li class="card tl-item major reveal" data-group="work">
+                        <div class="tl-head">
+                            <div><h3 class="tl-title"><span class="tl-type">Work</span>Data Analytics Intern</h3><p class="tl-org">ThinkMates EduTech Pvt. Ltd</p></div>
+                            <span class="tl-date">Mar - Jul 2025</span>
+                        </div>
+                        <ul class="tl-list">
+                            <li>Analysed a 12K+ record Zomato (Pune) dataset with Python, Excel and Power BI: customer behaviour, pricing and restaurant performance.</li>
+                            <li>Engineered features (price tiers, rating bands, locality clusters) to make KPIs accurate and consistent.</li>
+                            <li>Built Sales, Manager and CEO dashboards in Power BI and SQL to support strategic decisions.</li>
+                        </ul>
+                    </li>
+                    <li class="card tl-item reveal" data-group="education">
+                        <div class="tl-head">
+                            <div><h3 class="tl-title"><span class="tl-type">Education</span>Started B.Tech, CSE (AI &amp; ML)</h3><p class="tl-org">TKR College of Engineering and Technology</p></div>
+                            <span class="tl-date">2022</span>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- ============================== Achievements ============================== -->
+        <section id="achievements" aria-labelledby="achievements-title">
+            <div class="container">
+                <div class="section-head reveal">
+                    <div class="section-head-text">
+                        <span class="eyebrow">Achievements</span>
+                        <h2 id="achievements-title">Proof of work</h2>
+                        <p>Verifiable milestones, each traceable to a public repository or credential.</p>
+                    </div>
+                </div>
+
+                <div class="wall">
+                    <article class="card proof reveal" data-spotlight>
+                        <div class="proof-value">SIH25040</div>
+                        <h3 class="proof-title">Hackathon problem, solved end to end</h3>
+                        <p class="proof-desc">Built FloatChat for a Smart India Hackathon 2025 problem statement from the Ministry of Earth Sciences.</p>
+                        <span class="proof-source">FloatChat-ARGO-RAG</span>
                     </article>
-                    <article class="card cert reveal">
-                        <span class="cert-issuer">Oracle</span>
-                        <h3>Certified Data Science Professional</h3>
-                        <span class="cert-date">Oct 2025</span>
+                    <article class="card proof reveal" data-spotlight>
+                        <div class="proof-value">550+</div>
+                        <h3 class="proof-title">Automated tests</h3>
+                        <p class="proof-desc">Across five repositories, with CI running on every push in four of them.</p>
+                        <span class="proof-source">pytest · GitHub Actions</span>
                     </article>
-                    <article class="card cert reveal">
-                        <span class="cert-issuer">Cisco</span>
-                        <h3>Introduction to Data Science</h3>
-                        <span class="cert-date">Dec 2025</span>
+                    <article class="card proof reveal" data-spotlight>
+                        <div class="proof-value">v1.0.0</div>
+                        <h3 class="proof-title">Live production release</h3>
+                        <p class="proof-desc">Protected main branch, gated CI/CD, health-checked deploys and drift monitoring.</p>
+                        <span class="proof-source">Daily-Temperature-Forecasting</span>
                     </article>
-                    <article class="card cert reveal">
-                        <span class="cert-issuer">ServiceNow</span>
-                        <h3>Certified System Administrator (CSA)</h3>
-                        <span class="cert-date">Jul 2025</span>
+                    <article class="card proof reveal" data-spotlight>
+                        <div class="proof-value">0.90 → 0.72</div>
+                        <h3 class="proof-title">Caught a leak in my own model</h3>
+                        <p class="proof-desc">Found that preprocessing before cross-validation inflated my churn scores, fixed the pipeline and published the honest numbers.</p>
+                        <span class="proof-source">Customer-Churn-Prediction</span>
                     </article>
-                    <article class="card cert reveal">
-                        <span class="cert-issuer">UiPath</span>
-                        <h3>Automation Developer Associate</h3>
+                    <article class="card proof wide reveal" data-spotlight>
+                        <div class="proof-value">5</div>
+                        <h3 class="proof-title">Industry certifications</h3>
+                        <div class="cert-list">
+                            <div class="cert-item"><b>Generative AI Professional</b><span>Oracle · Oct 2025</span></div>
+                            <div class="cert-item"><b>Data Science Professional</b><span>Oracle · Oct 2025</span></div>
+                            <div class="cert-item"><b>Introduction to Data Science</b><span>Cisco · Dec 2025</span></div>
+                            <div class="cert-item"><b>Certified System Administrator</b><span>ServiceNow · Jul 2025</span></div>
+                            <div class="cert-item"><b>Automation Developer Associate</b><span>UiPath</span></div>
+                        </div>
+                    </article>
+                    <article class="card proof reveal" data-spotlight>
+                        <div class="proof-value">8.12</div>
+                        <h3 class="proof-title">CGPA</h3>
+                        <p class="proof-desc">B.Tech CSE (AI &amp; ML), TKR College of Engineering and Technology, 2022 - 2026.</p>
+                        <span class="proof-source">JNTUH</span>
+                    </article>
+                    <article class="card proof reveal" data-spotlight>
+                        <div class="proof-value">12K+</div>
+                        <h3 class="proof-title">Records turned into decisions</h3>
+                        <p class="proof-desc">Internship dataset cleaned and modelled into dashboards for sales teams, managers and the CEO.</p>
+                        <span class="proof-source">ThinkMates EduTech</span>
+                    </article>
+                    <article class="card proof reveal" data-spotlight>
+                        <div class="proof-value">$0</div>
+                        <h3 class="proof-title">API cost for my LLM apps</h3>
+                        <p class="proof-desc">FloatChat and Chat with Documents run on a local Llama 3.1 8B, so private data never leaves the machine.</p>
+                        <span class="proof-source">Ollama</span>
                     </article>
                 </div>
             </div>
         </section>
 
-        <!-- Contact -->
-        <section id="contact">
-            <div class="container">
-                <div class="contact-card reveal">
+        <!-- ============================== Contact ============================== -->
+        <section id="contact" class="section-alt" aria-labelledby="contact-title">
+            <div class="container contact-grid">
+                <div class="contact-intro reveal">
                     <span class="eyebrow">Contact</span>
-                    <h2 style="margin-top: 10px;">Let's build something that works</h2>
-                    <p>I'm looking for entry-level Data Scientist, ML Engineer and AI Engineer roles. If my work looks useful to your team, I'd love to talk.</p>
-                    <div class="hero-cta">
-                        <a href="mailto:poojithareddy1905@gmail.com" class="btn btn-primary">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
-                            poojithareddy1905@gmail.com
+                    <div class="section-head" style="margin-bottom: 0;"><div class="section-head-text"><h2 id="contact-title">Let's talk</h2></div></div>
+                    <p>I'm open to entry-level Data Scientist, ML Engineer and AI Engineer roles. Email is the fastest way to reach me.</p>
+
+                    <div class="contact-links">
+                        <div class="contact-link">
+                            <span class="ci" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
+                            <a href="mailto:poojithareddy1905@gmail.com"><span class="cl-label">Email</span><br><span class="cl-value">poojithareddy1905@gmail.com</span></a>
+                            <button class="copy-btn" id="copy-email" type="button" aria-label="Copy email address">Copy</button>
+                        </div>
+                        <a class="contact-link" href="https://www.linkedin.com/in/gorlapoojitha" target="_blank" rel="noopener">
+                            <span class="ci" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4.017-3.238-4.017 0v5.604h-3v-11h3v1.765c1.396-2.586 7.017-2.356 7.017 3.541v5.694z"/></svg></span>
+                            <span><span class="cl-label">LinkedIn</span><br><span class="cl-value">in/gorlapoojitha</span></span>
+                            <span class="cl-end" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
                         </a>
-                    </div>
-                    <div class="socials">
-                        <a class="social" href="https://github.com/poojithareddy19" target="_blank" rel="noopener" aria-label="GitHub">
-                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12.02c0 4.42 2.87 8.17 6.84 9.5.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.64-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.03A9.56 9.56 0 0 1 12 6.84c.85 0 1.7.11 2.5.34 1.91-1.3 2.75-1.03 2.75-1.03.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10.02 10.02 0 0 0 22 12.02C22 6.48 17.52 2 12 2z"/></svg>
-                        </a>
-                        <a class="social" href="https://www.linkedin.com/in/gorlapoojitha" target="_blank" rel="noopener" aria-label="LinkedIn">
-                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4.017-3.238-4.017 0v5.604h-3v-11h3v1.765c1.396-2.586 7.017-2.356 7.017 3.541v5.694z"/></svg>
-                        </a>
-                        <a class="social" href="mailto:poojithareddy1905@gmail.com" aria-label="Email">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+                        <a class="contact-link" href="https://github.com/poojithareddy19" target="_blank" rel="noopener">
+                            <span class="ci" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12.02c0 4.42 2.87 8.17 6.84 9.5.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.64-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.03A9.56 9.56 0 0 1 12 6.84c.85 0 1.7.11 2.5.34 1.91-1.3 2.75-1.03 2.75-1.03.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10.02 10.02 0 0 0 22 12.02C22 6.48 17.52 2 12 2z"/></svg></span>
+                            <span><span class="cl-label">GitHub</span><br><span class="cl-value">poojithareddy19</span></span>
+                            <span class="cl-end" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
                         </a>
                     </div>
                 </div>
+
+                <form class="card contact-form reveal" id="contact-form" novalidate aria-labelledby="form-title">
+                    <h3 id="form-title" class="visually-hidden">Send Gorla Poojitha a message</h3>
+                    <div class="form-row">
+                        <div class="field">
+                            <label for="cf-name">Name</label>
+                            <input id="cf-name" name="name" type="text" autocomplete="name" placeholder="Your name" required aria-describedby="cf-name-error">
+                            <span class="field-error" id="cf-name-error" aria-live="polite"></span>
+                        </div>
+                        <div class="field">
+                            <label for="cf-email">Email</label>
+                            <input id="cf-email" name="email" type="email" autocomplete="email" placeholder="you@company.com" required aria-describedby="cf-email-error">
+                            <span class="field-error" id="cf-email-error" aria-live="polite"></span>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="cf-subject">Subject <span style="color: var(--faint); font-weight: 400;">(optional)</span></label>
+                        <input id="cf-subject" name="subject" type="text" placeholder="Data Scientist role at ...">
+                    </div>
+                    <div class="field">
+                        <label for="cf-message">Message</label>
+                        <textarea id="cf-message" name="message" placeholder="Tell me about the role or project" required aria-describedby="cf-message-error"></textarea>
+                        <span class="field-error" id="cf-message-error" aria-live="polite"></span>
+                    </div>
+                    <div class="form-foot">
+                        <p class="form-note">Opens your email app with the message ready to send.</p>
+                        <button class="btn btn-primary" type="submit">Send message
+                            <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                        </button>
+                    </div>
+                    <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+                </form>
             </div>
         </section>
 
@@ -886,131 +681,11 @@
 
     <footer>
         <div class="container footer-inner">
-            <p>&copy; <span id="year">2026</span> Gorla Poojitha</p>
-            <p>Built with HTML, CSS and JavaScript · <a href="https://github.com/poojithareddy19" target="_blank" rel="noopener">github.com/poojithareddy19</a></p>
+            <p>&copy; <span id="year">2026</span> Gorla Poojitha · Hyderabad, India</p>
+            <p><a href="https://github.com/poojithareddy19/Portfolio" target="_blank" rel="noopener">Source on GitHub</a></p>
         </div>
     </footer>
 
-    <script>
-        document.documentElement.classList.add('js');
-
-        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-        // Rotating role line (typewriter effect)
-        const roles = ['Data Scientist', 'ML Engineer', 'RAG & LLM Builder', 'MLOps Practitioner'];
-        const roleEl = document.getElementById('role');
-        let roleIndex = 0;
-
-        function typeRole(text, i, done) {
-            if (i <= text.length) {
-                roleEl.textContent = text.slice(0, i);
-                setTimeout(() => typeRole(text, i + 1, done), 65);
-            } else {
-                setTimeout(done, 1600);
-            }
-        }
-
-        function eraseRole(done) {
-            const text = roleEl.textContent;
-            if (text.length > 0) {
-                roleEl.textContent = text.slice(0, -1);
-                setTimeout(() => eraseRole(done), 35);
-            } else {
-                done();
-            }
-        }
-
-        function cycleRoles() {
-            eraseRole(() => {
-                roleIndex = (roleIndex + 1) % roles.length;
-                typeRole(roles[roleIndex], 0, cycleRoles);
-            });
-        }
-
-        if (!prefersReducedMotion) {
-            setTimeout(cycleRoles, 2200);
-        }
-
-        // Header border on scroll
-        const navbar = document.getElementById('navbar');
-        const onScroll = () => navbar.classList.toggle('scrolled', window.scrollY > 8);
-        window.addEventListener('scroll', onScroll, { passive: true });
-        onScroll();
-
-        // Light / dark theme toggle. Follows the system setting until the visitor picks one.
-        const root = document.documentElement;
-        const themeToggle = document.getElementById('theme-toggle');
-        const themeColorMeta = document.querySelector('meta[name="theme-color"]');
-        function applyTheme(theme) {
-            root.setAttribute('data-theme', theme);
-            themeToggle.setAttribute('aria-label', theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme');
-            themeColorMeta.setAttribute('content', theme === 'dark' ? '#0a0a0a' : '#ffffff');
-        }
-        applyTheme(root.getAttribute('data-theme') || 'dark');
-        themeToggle.addEventListener('click', () => {
-            const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-            applyTheme(next);
-            try { localStorage.setItem('theme', next); } catch (e) {}
-        });
-        window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', e => {
-            let saved = null;
-            try { saved = localStorage.getItem('theme'); } catch (err) {}
-            if (!saved) applyTheme(e.matches ? 'light' : 'dark');
-        });
-
-        // Mobile menu
-        const menuToggle = document.getElementById('menu-toggle');
-        const navLinks = document.getElementById('nav-links');
-        function setMenu(open) {
-            navLinks.classList.toggle('open', open);
-            menuToggle.setAttribute('aria-expanded', String(open));
-            menuToggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
-        }
-        menuToggle.addEventListener('click', () => setMenu(!navLinks.classList.contains('open')));
-        navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => setMenu(false)));
-        document.addEventListener('keydown', e => { if (e.key === 'Escape') setMenu(false); });
-
-        // Active nav link for the section in view
-        const navAnchors = [...navLinks.querySelectorAll('a[href^="#"]')];
-        const sectionObserver = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    navAnchors.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + entry.target.id));
-                }
-            });
-        }, { rootMargin: '-45% 0px -50% 0px' });
-        navAnchors.forEach(a => {
-            const section = document.querySelector(a.getAttribute('href'));
-            if (section) sectionObserver.observe(section);
-        });
-
-        // Project filters
-        const filterButtons = document.querySelectorAll('.filter');
-        const projects = document.querySelectorAll('.project');
-        filterButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                const filter = button.dataset.filter;
-                filterButtons.forEach(b => b.setAttribute('aria-pressed', String(b === button)));
-                projects.forEach(project => {
-                    const tags = project.dataset.tags.split(' ');
-                    project.hidden = filter !== 'all' && !tags.includes(filter);
-                    project.classList.add('visible');
-                });
-            });
-        });
-
-        // Reveal elements as they scroll into view
-        const revealObserver = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    revealObserver.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.08 });
-        document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
-
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+    <script type="module" src="/src/main.js"></script>
 </body>
 </html>
